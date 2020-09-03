@@ -1,4 +1,5 @@
-console.log("load");
+// Question 4
+// Program to display only element containing 'a' in them from a array
 
 const list = ["harry","jack","scott","stive","smith","warner"];
 
