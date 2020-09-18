@@ -1,0 +1,87 @@
+<!-- Question 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        .heading{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .table{
+            width: 100%;
+        }
+        th,td{
+            text-align: center;
+        }
+        .form{
+            margin-bottom: 20px;
+        }
+        input{
+            text-indent: 20px;
+            padding: 5px;
+        }
+        .btn{
+            padding: 5px;
+        }
+        .search{
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">My Super Hero</h1>
+        <div class="form">
+            <form action="" onsubmit="addData(event)">
+                <input type="text" placeholder="Name" id="name" required />
+                <input type="number" placeholder="Age" id="age" required />
+                <input type="text" placeholder="City" id="city" required />
+                <input type="number" placeholder="Salary" id="salary" required />
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="name" id="sname" onkeyup="searchName()" />
+            <span> or </span>
+            <input type="text" placeholder="city" id="cname" onkeyup="searchCity()" />
+        </div>
+        <div>
+            <table border="1" cellspacing=0px class="table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
